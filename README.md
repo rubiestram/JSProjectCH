@@ -1,2 +1,3 @@
-# JSProjectCH
-Proyecto final enfocado a Javascript para Coderhouse.
+# Javascript
+#### Proyecto final
+
