@@ -1,15 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cotizador de Préstamos</title>
     <link rel="stylesheet" href="/src/CSS/style.css">
-    <title>Proyecto Final</title>
 </head>
 <body>
-    
-
-    <!-- Javascript -->
-    <script src="/src/JS/main.js"></script>
+    <h1>Cotizador de Préstamos</h1>
+    <div id="app">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre">
+        <label for="monto">Monto del préstamo:</label>
+        <select id="monto">
+            <option value="1000">1000 pesos</option>
+            <option value="3000">3000 pesos</option>
+            <option value="4000">4000 pesos</option>
+            <option value="5000">5000 pesos</option>
+            <option value="10000">10000 pesos</option>
+            <option value="20000">20000 pesos</option>
+            <option value="30000">30000 pesos</option>
+            <option value="40000">40000 pesos</option>
+            <option value="50000">50000 pesos</option>
+        </select>
+        <label for="duracion">Duración (en meses):</label>
+        <input type="number" id="duracion">
+        <button id="calcular">Calcular</button>
+        <div id="resultado"></div>
+        <canvas id="graficoInteres" width="400" height="200"></canvas>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="/src/JS/app.js"></script>
 </body>
 </html>
